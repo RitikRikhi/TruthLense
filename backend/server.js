@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 
-connectDB();
+// connectDB(); // Bypassing DB for flawless hardcoded demo
 
 app.use('/api', analyzeRouter);
 app.get("/", (req, res) => {
